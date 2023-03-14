@@ -1,7 +1,14 @@
 import React from "react";
 import { FaSun, FaHome } from "react-icons/fa";
+import { CiDark, CiLight } from "react-icons/ci";
+import useDarkSide from "./darkmode/DarkMode";
 
 const Header = () => {
+  const [colorTheme, setTheme] = useDarkSide();
+
+  const toggleDarkMode = () => {
+    setTheme(colorTheme);
+  };
   return (
     <nav class="bg-white dark:bg-hadith-dark-card sticky shadow-sm top-0 z-50">
       <div className="container">
@@ -26,8 +33,11 @@ const Header = () => {
               <p class="style-Kalpurush text-main-menu dark:text-hadith-deepoffwhite font-normal text-lg leading-5 cursor-pointer hover:lg-max:bg-subcat-hover hover:lg-max:text-white hover:xl-min:text-[#399e7b] lg-max:w-full lg-max:py-4 lg-max:px-6 lg-max:rounded-xl">
                 প্রশ্ন সমূহ
               </p>
-              <div class="w-10 h-10 rounded-lg bg-[#ECEEF0] dark:bg-[#383838] flex items-center justify-center">
-                <FaSun />
+              <div
+                class="w-10 h-10 rounded-lg bg-[#ECEEF0] dark:bg-[#383838] flex items-center justify-center"
+                onClick={toggleDarkMode}
+              >
+                {colorTheme === "dark" ? <CiDark /> : <CiLight />}
               </div>
             </div>
           </div>
