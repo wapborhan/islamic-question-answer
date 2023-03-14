@@ -3,9 +3,9 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <Fragment>
+    <div className="bg-gray-50 dark:bg-hadith-dark-bg style-bn">
       <Header />
-    </Fragment>
+    </div>
   );
 }
 

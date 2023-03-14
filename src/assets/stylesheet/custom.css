@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap");
+@import url("https://ihadis.com/_next/static/css/9892dcb8ca8084be.css");
+
+a {
+  cursor: pointer;
+}
+.header a {
+  font-family: "Hind Siliguri", sans-serif !important;
+  font-size: 20px;
+}
