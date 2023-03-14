@@ -1672,9 +1672,9 @@ html {
 .bg-\[url\(\'\/assets\/404\/404\.svg\'\)\] {
   /* background-image: url(/assets/404/404.svg); */
 }
-.bg-\[url\(\'\/assets\/extra\/hero\.svg\'\)\] {
-  /* background-image: url(/assets/extra/hero.svg); */
-}
+/* .bg-\[url\(\'\/assets\/extra\/hero\.svg\'\)\] {
+  background-image: url(/assets/extra/hero.svg);
+} */
 .bg-\[url\(\'\/assets\/extra\/sliderbg\.svg\'\)\] {
   /* background-image: url(/assets/extra/sliderbg.svg); */
 }
@@ -3445,9 +3445,9 @@ div {
 .dark .dark\:bg-\[url\(\'\/assets\/404\/404-dark\.svg\'\)\] {
   /* background-image: url(/assets/404/404-dark.svg); */
 }
-.dark .dark\:bg-\[url\(\'\/assets\/extra\/hero-dark\.svg\'\)\] {
-  /* background-image: url(/assets/extra/hero-dark.svg); */
-}
+/* .dark .dark\:bg-\[url\(\'\/assets\/extra\/hero-dark\.svg\'\)\] {
+  background-image: url(/assets/extra/hero-dark.svg); 
+} */
 .dark .dark\:bg-\[url\(\'\/assets\/extra\/sliderbg-dark\.svg\'\)\] {
   /* background-image: url(/assets/extra/sliderbg-dark.svg); */
 }
