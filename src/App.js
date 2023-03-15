@@ -1,19 +1,18 @@
 import { Fragment } from "react";
-import Footer from "./components/Footer";
+import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
-import Banner from "./home/banner/Banner";
-import Categories from "./home/categories/Categories";
-import Question from "./home/question/Question";
+import HomePage from "./home/HomePage";
+import NotFound from "./components/Notfound";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="bg-gray-50 dark:bg-hadith-dark-bg style-bn">
       <Header />
-      <Banner />
-      <div className="mx-auto w-full xss:w-full xs:w-full xs:mx-0 sm:px-4 md:w-11/12 xl-min:w-[70%]">
-        <Categories />
-        <Question />
-      </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
       <Footer />
     </div>
   );

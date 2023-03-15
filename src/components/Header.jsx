@@ -3,6 +3,7 @@ import { FaHome } from "react-icons/fa";
 import { CiDark, CiLight, CiSquareQuestion } from "react-icons/ci";
 import { BsQuestionDiamondFill } from "react-icons/bs";
 import useDarkSide from "./darkmode/DarkMode";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [colorTheme, setTheme] = useDarkSide();
@@ -32,16 +33,27 @@ const Header = () => {
             <div className="flex items-center justify-center gap-10 leading-5 text-hadith-sm font-[100] lg-max:px-8 lg-max:gap-4">
               <div className="bg-hadith-button-background flex items-center gap-x-3 rounded-full cursor-pointer lg-max:w-full lg-min:py-2 lg-min:px-5 lg-max:rounded-xl text-white">
                 <FaHome />
-                <p className="style-Kalpurush font-medium text-white text-lg leading-5 cursor-pointer">
+                <NavLink
+                  to="/"
+                  className="style-Kalpurush font-medium text-white text-lg leading-5 cursor-pointer"
+                >
                   হোম
-                </p>
+                </NavLink>
               </div>
-              <p className="style-Kalpurush text-main-menu dark:text-hadith-deepoffwhite font-normal text-lg leading-5 cursor-pointer hover:lg-max:bg-subcat-hover hover:lg-max:text-white hover:xl-min:text-[#399e7b] lg-max:w-full lg-min:py-2 lg-min:px-5 lg-max:rounded-xl">
+
+              <NavLink
+                to="/categories"
+                className="style-Kalpurush text-main-menu dark:text-hadith-deepoffwhite font-normal text-lg leading-5 cursor-pointer hover:lg-max:bg-subcat-hover hover:lg-max:text-white hover:xl-min:text-[#399e7b] lg-max:w-full lg-min:py-2 lg-min:px-5 lg-max:rounded-xl"
+              >
                 বিভাগসমূহ
-              </p>
-              <p className="style-Kalpurush text-main-menu dark:text-hadith-deepoffwhite font-normal text-lg leading-5 cursor-pointer hover:lg-max:bg-subcat-hover hover:lg-max:text-white hover:xl-min:text-[#399e7b] lg-max:w-full xl-max:py-2 lg-min:py-2 lg-min:px-5 lg-max:rounded-xl">
+              </NavLink>
+
+              <NavLink
+                to="/question"
+                className="style-Kalpurush text-main-menu dark:text-hadith-deepoffwhite font-normal text-lg leading-5 cursor-pointer hover:lg-max:bg-subcat-hover hover:lg-max:text-white hover:xl-min:text-[#399e7b] lg-max:w-full xl-max:py-2 lg-min:py-2 lg-min:px-5 lg-max:rounded-xl"
+              >
                 প্রশ্নসমূহ
-              </p>
+              </NavLink>
               <div
                 className="p-3 rounded-lg bg-[#ECEEF0] dark:bg-[#383838] flex items-center justify-center"
                 onClick={toggleDarkMode}
