@@ -1,6 +1,6 @@
 import React from "react";
 import { FaHome } from "react-icons/fa";
-import { CiDark, CiLight, CiSquareQuestion } from "react-icons/ci";
+import { CiDark, CiLight } from "react-icons/ci";
 import { BsQuestionDiamondFill } from "react-icons/bs";
 import useDarkSide from "./darkmode/DarkMode";
 import { NavLink } from "react-router-dom";
