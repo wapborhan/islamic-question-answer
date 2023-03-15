@@ -1,4 +1,6 @@
 import React from "react";
+import { HiHome } from "react-icons/hi";
+import Home from "../../assets/images/icons/home.svg";
 
 const SideBar = () => {
   return (
@@ -6,9 +8,13 @@ const SideBar = () => {
       <div class="grid xss:grid-cols-5 xs:grid-cols-5 sm:grid-cols-5 md:grid-rows-1 md:grid-cols-5 lg-min:grid-rows-[1fr,56px,56px,56px,56px,56px,56px,1fr] place-content-center place-items-center my-auto h-full gap-[4.5%]">
         <img
           class=" p-4 cursor-pointer md-max:p-2 md-max:w-9 rounded-lg lg-min:row-start-2 col-start-1"
-          src="/assets/leftbar/dark/home.svg"
+          src={Home}
           alt=""
         />
+        {/* <div className="icon p-4 cursor-pointer md-max:p-2 md-max:w-9 rounded-lg lg-min:row-start-2 col-start-1">
+          <HiHome />
+        </div> */}
+
         <img
           class="bg-hadith-button-background p-4 cursor-pointer md-max:p-2 md-max:w-9 rounded-lg lg-min:row-start-3 "
           src="/assets/leftbar/fill/active/book.svg"
