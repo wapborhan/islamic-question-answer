@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Banner from "./home/banner/Banner";
 import Categories from "./home/categories/Categories";
+import Question from "./home/question/Question";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Banner />
       <div className="mx-auto w-full xss:w-full xs:w-full xs:mx-0 sm:px-4 md:w-11/12 xl-min:w-[70%]">
         <Categories />
+        <Question />
       </div>
       <Footer />
     </div>

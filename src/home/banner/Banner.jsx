@@ -15,7 +15,7 @@ const Banner = () => {
     xs:placeholder:text-sm xs:pr-20 w-full placeholder: placeholder:leading-4 dark:placeholder:text-dark-text 
     dark:placeholder:opacity-70"
               type="text"
-              placeholder="Search Hadith"
+              placeholder="প্রশ্ন খুজুন "
               id="search_box"
               value=""
             />
