@@ -30,16 +30,16 @@ const Header = () => {
             </h1>
           </div>
           <div className="items-center justify-between  ">
-            <div className="flex items-center justify-center gap-10 leading-5 text-hadith-sm font-[100] lg-max:px-8 lg-max:gap-4">
-              <div className="bg-hadith-button-background flex items-center gap-x-3 rounded-full cursor-pointer lg-max:w-full lg-min:py-2 lg-min:px-5 lg-max:rounded-xl text-white">
+            <div className="flex items-center justify-center gap-10 leading-5 text-hadith-sm font-[100] lg-max:px-8 lg-max:gap-4 headnav">
+              <NavLink
+                to="/"
+                className="style-Kalpurush flex items-center gap-x-3 rounded-full cursor-pointer lg-max:w-full lg-min:py-2 lg-min:px-5 lg-max:rounded-xl dark:text-hadith-deepoffwhite"
+              >
                 <FaHome />
-                <NavLink
-                  to="/"
-                  className="style-Kalpurush font-medium text-white text-lg leading-5 cursor-pointer"
-                >
+                <div className="style-Kalpurush font-medium  text-lg leading-5 cursor-pointer">
                   হোম
-                </NavLink>
-              </div>
+                </div>
+              </NavLink>
 
               <NavLink
                 to="/categories"

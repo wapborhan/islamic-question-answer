@@ -1545,6 +1545,12 @@ html {
   --tw-bg-opacity: 1;
   background-color: rgb(43 158 118 / var(--tw-bg-opacity));
 }
+.headnav a.active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(43 158 118 / var(--tw-bg-opacity));
+  color: #fff;
+  transition: all linear 0.3s;
+}
 .bg-hadith-body-grey-bg {
   --tw-bg-opacity: 1;
   background-color: rgb(242 244 246 / var(--tw-bg-opacity));

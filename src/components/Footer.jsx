@@ -2,8 +2,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="container pb-10 mt-12 xss:max-w-full xs:max-w-full sm:max-w-full md:px-6 md:w-full">
-      <div className="flex items-center xs-max:w-full gap-3 pt-10 mb-5 xss:mb-4 xss:w-14 xss:h-14 xss:pt-0 sm:mt-10">
+    <footer className="bg-black">
+      <div className="container  pt-10 pb-10 mt-12 xss:max-w-full xs:max-w-full sm:max-w-full md:px-6 md:w-full ">
+        <div className="text-center text-white">Copyright 2023</div>
+        {/* <div className="flex items-center xs-max:w-full gap-3 pt-10 mb-5 xss:mb-4 xss:w-14 xss:h-14 xss:pt-0 sm:mt-10">
         <img className="w-10" src="/assets/home-logo.png" alt="hadith-logo" />
         <h1 className="text-[1.7rem] font-medium text-hadith-logo-color">
           আল হাদিস
@@ -92,8 +94,9 @@ const Footer = () => {
             </span>
           </div>
         </div>
+      </div> */}
       </div>
-    </div>
+    </footer>
   );
 };
 
