@@ -1,4 +1,5 @@
 import React from "react";
+import { CiRead } from "react-icons/ci";
 
 const QuesCard = () => {
   return (
@@ -25,7 +26,7 @@ const QuesCard = () => {
             ></path>
           </svg>
         </div>
-        <div className="flex lg:w-80 md:w-56 flex-col justify-between gap-1.5 group">
+        <div className="flex flex-col justify-between gap-1.5 group">
           <h4 className="text-base font-medium leading-7 text-[15px] text-black group-hover: dark:group-hover:text-subcat-hover dark:text-hadith-deepoffwhite xss:text-[15px] md:text-base xl:text-base style-Kalpurush max-line-2">
             মসজিদে ঈদের জামাত করা যাবে কি?
           </h4>
@@ -36,8 +37,8 @@ const QuesCard = () => {
             </span>
           </div>
         </div>
-        <div className="dark:text-hadith-deepoffwhite style-Kalpurush-dropdown text-sm leading-[26px] md:text-[13px] flex-initial text-gray-400 group-hover:text-white   style-Kalpurush  md-max:text-base  font-medium  group-hover:opacity-100  xl:text-lg group-hover:bg-[#2b9e76] bg-[#ECEEF0] dark:bg-[#383838] px-2 py-1 rounded-tl-lg rounded-br-lg">
-          ৪৮ বার পঠিত
+        <div className="dark:text-hadith-deepoffwhite style-Kalpurush-dropdown text-sm leading-[26px] md:text-[13px]  text-gray-400 group-hover:text-white style-Kalpurush  md-max:text-base  font-medium  group-hover:opacity-100  xl:text-lg group-hover:bg-[#2b9e76] bg-[#ECEEF0] dark:bg-[#383838] px-2 py-1 rounded-tl-lg rounded-br-lg flex items-center">
+          <CiRead /> <span className="ml-2">৪৮</span>
         </div>
       </div>
     </div>
