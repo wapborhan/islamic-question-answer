@@ -18,6 +18,7 @@ const Pages = () => {
           </div>
         </div>
         <SideBar />
+        <div class="Toastify"></div>
       </div>
     </div>
   );
