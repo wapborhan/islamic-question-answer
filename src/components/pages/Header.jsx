@@ -43,7 +43,7 @@ const Header = () => {
           </div>
         </div>
         <div
-          className="p-3 rounded-lg bg-[#ECEEF0] dark:bg-[#383838] flex items-center justify-center"
+          className="p-3 rounded-lg bg-[#ECEEF0] dark:bg-[#383838] flex items-center justify-center cursor-pointer"
           onClick={toggleDarkMode}
         >
           {colorTheme === "dark" ? <CiDark /> : <CiLight />}
