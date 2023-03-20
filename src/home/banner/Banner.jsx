@@ -295,7 +295,7 @@ const Banner = () => {
             <section className=" w-screen h-full cursor-pointer "></section>
           </main>
         </form>
-        <div className="w-full h-64 lg-min:h-48 text-center text-white sm:mb-5 xs:w-10/12 sm:w-9/12 md:w-9/12 lg:w-9/12 lg:py-3 xl:w-7/12 2xl-min:w-6/12">
+        {/* <div className="w-full h-64 lg-min:h-48 text-center text-white sm:mb-5 xs:w-10/12 sm:w-9/12 md:w-9/12 lg:w-9/12 lg:py-3 xl:w-7/12 2xl-min:w-6/12">
           <div className="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
             <div
               className="swiper-wrapper"
@@ -314,7 +314,7 @@ const Banner = () => {
                   <div className="mt-8 mb-16 xs-max:mt-14 dark:text-hadith-deepoffwhite xs-max:mb-14 font-medium opacity-90 leading-7 xss:mt-2 xs:mt-6 sm:text-lg md:text-lg lg:text-lg xl-min:text-xl">
                     [ঊপদেশ: <span>১১৩</span>]
                   </div>
-                </div>
+                </div> 
               </div>
               {/* <div
                 className="swiper-slide swiper-slide-prev"
@@ -378,7 +378,7 @@ const Banner = () => {
                     [ঊপদেশ: <span>১৩৪</span>]
                   </div>
                 </div>
-              </div> */}
+              </div> 
             </div>
             <div className="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal">
               <span className="swiper-pagination-bullet"></span>
@@ -388,7 +388,7 @@ const Banner = () => {
               <span className="swiper-pagination-bullet"></span>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
