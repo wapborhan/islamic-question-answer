@@ -1,5 +1,6 @@
 import React from "react";
 import AnsList from "./AnsList";
+import IMG from "../../../assets/images/icons/home.svg";
 
 const Answar = () => {
   return (
@@ -17,29 +18,11 @@ const Answar = () => {
             >
               <div class="flex flex-row">
                 <div>
-                  <img
-                    class="dark:hidden block"
-                    src="/assets/others/bread-crumb-book.svg"
-                    alt=""
-                  />
-                  <img
-                    class="dark:block hidden"
-                    src="/assets/others/bread-crumb-book-dark.svg"
-                    alt=""
-                  />
+                  <img class="dark:hidden block" src={IMG} alt="" />
+                  <img class="dark:block hidden" src={IMG} alt="" />
                 </div>
                 <div class="flex flex-row">
-                  <img
-                    class="dark:hidden block"
-                    src="/assets/others/forword.svg"
-                    alt=""
-                  />
-                  <img
-                    class="dark:block hidden"
-                    src="/assets/others/forword-dark.svg"
-                    alt=""
-                  />
-                  <a href="/bukhari">Bukhari</a>
+                  /<a href="/bukhari">Bukhari</a>
                 </div>
               </div>
             </div>

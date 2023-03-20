@@ -1,7 +1,7 @@
 import React from "react";
 import { CiRead } from "react-icons/ci";
 
-const QuesCard = () => {
+const AnsCard = () => {
   return (
     <div>
       <div style={{ opacity: "1", transform: "none" }}>
@@ -47,4 +47,4 @@ const QuesCard = () => {
   );
 };
 
-export default QuesCard;
+export default AnsCard;

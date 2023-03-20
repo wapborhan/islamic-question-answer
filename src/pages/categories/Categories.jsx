@@ -1,6 +1,7 @@
 import React from "react";
-import AnsSide from "../answar/AnsSide";
-import Answar from "../answar/Answar";
+import { Route, Routes } from "react-router-dom";
+import AnsSide from "./answar/AnsSide";
+import Answar from "./answar/Answar";
 import CatList from "./CatList";
 
 const Categories = () => {
@@ -9,6 +10,9 @@ const Categories = () => {
       <CatList />
       <Answar />
       <AnsSide />
+      <Routes>
+        <Route path="/answar/1" />
+      </Routes>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import QuesCard from "./QuesCard";
+import AnsCard from "./AnsCard";
 
 const AnsList = () => {
   return (
@@ -8,11 +8,16 @@ const AnsList = () => {
 
       <div className="pb-6 xss:mr-0">
         <div className="lg-min:pl-3 lg-min:bg-white lg-min:dark:bg-hadith-dark-card rounded-2xl w-full pb-5">
-          <QuesCard />
-          <QuesCard />
-          <QuesCard />
-          <QuesCard />
-          <QuesCard />
+          <AnsCard />
+          <AnsCard />
+          <AnsCard />
+          <AnsCard />
+          <AnsCard />
+          <AnsCard />
+          <AnsCard />
+          <AnsCard />
+          <AnsCard />
+          <AnsCard />
         </div>
       </div>
     </div>

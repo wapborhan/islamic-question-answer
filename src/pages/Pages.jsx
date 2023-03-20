@@ -3,7 +3,6 @@ import { Route, Routes } from "react-router-dom";
 import Header from "../components/pages/Header";
 import SideBar from "../components/pages/SideBar";
 import Categories from "./categories/Categories";
-import CatList from "./categories/CatList";
 
 const Pages = () => {
   return (
@@ -16,7 +15,7 @@ const Pages = () => {
             class="px-5 xs:pb-12 sm:pb-12 md-max:px-3 md:pb-10 lg:pb-20  md-max:overflow-y-auto md-max:h-screen"
           >
             <Routes>
-              <Route path="/categories" element={<Categories />} />
+              <Route path="/categories/*" element={<Categories />} />
             </Routes>
           </div>
         </div>
