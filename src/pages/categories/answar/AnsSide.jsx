@@ -2,7 +2,7 @@ import React from "react";
 
 const AnsSide = () => {
   return (
-    <div className="side-bar 2xl-min:block w-[350px] xl-max:w-full cat-scrl 2xl-min:h-screen 2xl-min:pb-36 hidden col-start-3">
+    <div className="side-bar 2xl-min:block w-[350px]  cat-scrl 2xl-min:h-screen 2xl-min:pb-36  col-start-3">
       <div class="dark:bg-[#333333] 2xl-min:dark:bg-hadith-dark-card  subscribe-box border xl-max:mb-10 p-5 dark:border-none rounded-lg mb-2.5 bg-[#34ab82] d relative">
         <svg
           class="absolute right-0 bottom-0 fill-[#FFFFFF] z-[-0] dark:fill-[#626262]"

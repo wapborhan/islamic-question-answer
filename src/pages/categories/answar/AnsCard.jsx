@@ -1,9 +1,10 @@
 import React from "react";
 import { CiRead } from "react-icons/ci";
+import { NavLink } from "react-router-dom";
 
 const AnsCard = () => {
   return (
-    <div>
+    <NavLink to="answer/1">
       <div style={{ opacity: "1", transform: "none" }}>
         <div className="xs-max:py-4 sm:py-2 md:py-2 md-max:bg-white dark:bg-hadith-dark-card group cursor-pointer h-full border-b border-solid  border-[#f6f7f7] rounded-xl md-max:border-transparent lg-min:dark:border-b-dark-cat-border md-max:dark:hover:bg-darkchapter-list-hover md-max:mb-4">
           <div class="lg-min:py-2 flex items-center h-full lg-min:bg-white lg-min:dark:bg-transparent lg-min:hover:bg-[#ebfcf6] dark:lg-min:hover:bg-[#2E2E2E] rounded-[0.70rem] gap-6 w-full px-6  xss:px-3 xs:px-3 ">
@@ -43,7 +44,7 @@ const AnsCard = () => {
           </div>
         </div>
       </div>
-    </div>
+    </NavLink>
   );
 };
 

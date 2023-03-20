@@ -3858,6 +3858,9 @@ div {
   .lg-min\:h-\[calc\(100vh_-_270px\)\] {
     height: calc(100vh - 270px);
   }
+  .lg-min\:h-\[calc\(100vh_-_295px\)\] {
+    height: calc(100vh - 295px);
+  }
   .lg-min\:h-10 {
     height: 2.5rem;
   }
@@ -4043,6 +4046,9 @@ div {
   }
   .xl-min\:h-\[calc\(100vh-170px\)\] {
     height: calc(100vh - 170px);
+  }
+  .xl-min\:h-\[calc\(100vh-195px\)\] {
+    height: calc(100vh - 195px);
   }
   .xl-min\:w-\[70\%\] {
     width: 70%;
@@ -5095,6 +5101,9 @@ div {
   }
   .lg-max\:h-\[calc\(100vh_-_200px\)\] {
     height: calc(100vh - 200px);
+  }
+  .lg-max\:h-\[calc\(100vh_-_300px\)\] {
+    height: calc(100vh - 300px);
   }
   .lg-max\:w-full {
     width: 100%;
