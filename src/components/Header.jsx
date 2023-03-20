@@ -42,7 +42,7 @@ const Header = () => {
               </NavLink>
 
               <NavLink
-                to="/categories"
+                to="/pages/categories"
                 className="style-Kalpurush text-main-menu dark:text-hadith-deepoffwhite font-normal text-lg leading-5 cursor-pointer hover:lg-max:bg-subcat-hover hover:lg-max:text-white hover:xl-min:text-[#399e7b] lg-max:w-full lg-min:py-2 lg-min:px-5 lg-max:rounded-xl"
               >
                 বিভাগসমূহ

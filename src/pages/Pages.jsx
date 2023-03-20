@@ -1,4 +1,5 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import Header from "../components/pages/Header";
 import SideBar from "../components/pages/SideBar";
 import Categories from "./categories/Categories";
@@ -14,7 +15,9 @@ const Pages = () => {
             id="scrollToTop"
             class="px-5 xs:pb-12 sm:pb-12 md-max:px-3 md:pb-10 lg:pb-20  md-max:overflow-y-auto md-max:h-screen"
           >
-            <Categories />
+            <Routes>
+              <Route path="/categories" element={<Categories />} />
+            </Routes>
           </div>
         </div>
         <SideBar />

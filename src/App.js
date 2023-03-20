@@ -9,7 +9,7 @@ function App() {
     <Fragment>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/categories" element={<Pages />} />
+        <Route path="/pages/*" element={<Pages />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Fragment>
