@@ -1,7 +1,10 @@
 import React from "react";
 import { CiRead } from "react-icons/ci";
 
-const QuesCard = () => {
+const QuesCard = (props) => {
+  console.log(props.data);
+
+  const data = props.data;
   return (
     <div
       name="bookCard"
@@ -10,7 +13,7 @@ const QuesCard = () => {
       <div className="flex items-center gap-4 justify-between">
         <div className="h-12 w-16 sm-max:w-10 xl:w-10  flex items-center justify-center relative">
           <h3 className="text-gray-400 group-hover:text-white dark:text-hadith-deepoffwhite   style-Kalpurush absolute md-max:text-base text-xl font-medium  group-hover:opacity-100  xl:text-lg">
-            1
+            {data.id}
           </h3>
           <svg
             className="fill-[#f1f5f4] dark:fill-dark-bg-lite group-hover:fill-subcat-hover     "
@@ -28,12 +31,12 @@ const QuesCard = () => {
         </div>
         <div className="flex flex-col justify-between gap-1.5 group">
           <h4 className="text-base font-medium leading-7 text-[15px] text-black group-hover: dark:group-hover:text-subcat-hover dark:text-hadith-deepoffwhite xss:text-[15px] md:text-base xl:text-base style-Kalpurush max-line-2">
-            মসজিদে ঈদের জামাত করা যাবে কি?
+            {data.quest}
           </h4>
           <div className="text-[#40404099] dark:text-dark-text-subtitle style-Kalpurush-dropdown text-sm leading-[26px] md:text-[13px]">
             বিভাগসমূহ:{" "}
             <span className=" group-hover:text-hadith-deepoffwhite text-[#2b9e76]">
-              পবিত্রতা ও সালাত বিভাগ
+              {data.cat}
             </span>
           </div>
         </div>

@@ -1,7 +1,9 @@
 import React from "react";
 import QuesCard from "./QuesCard";
 
-const Question = () => {
+const Question = (props) => {
+  // console.log(props.data);
+
   return (
     <div className="mt-[75px] xss:mt-10 xs:mt-10 lg-max:max-w-[94%] lg-max:mx-auto sm:mt-9 md:p-0 md:mt-[35px] lg:mt-[65px]">
       <h3 className="flex items-center justify-center font-semibold text-hadith-black dark:text-hadith-deepoffwhite mb-[15px] xss:text-[22px] xs:text-[22px] sm:text-[22px] md:text-[28px] lg-min:text-[35px] lg-min:leading-[52.5px]">
@@ -15,12 +17,10 @@ const Question = () => {
         </p>
       </div>
       <div className="grid gap-4 mb-[45px] sm:grid-cols-2 sm:mb-9 md:grid-cols-2 lg-min:grid-cols-2">
-        {/*  */}
-        <QuesCard />
-        <QuesCard />
-        <QuesCard />
-        <QuesCard />
-        {/*  */}
+        {props.data.map((item) => {
+          // console.log(item);
+          return <QuesCard data={item} />;
+        })}
       </div>
       <div className="flex items-center justify-center">
         <div className="py-[15px] text-white px-[20px] bg-hadith-button-background rounded-xl hover:drop-shadow-[0_10px_6px_rgba(0,0,0,0.1)]">
