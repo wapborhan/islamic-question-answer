@@ -17,9 +17,9 @@ const Question = (props) => {
         </p>
       </div>
       <div className="grid gap-4 mb-[45px] sm:grid-cols-2 sm:mb-9 md:grid-cols-2 lg-min:grid-cols-2">
-        {props.data.map((item) => {
+        {props.data.map((item, idx) => {
           // console.log(item);
-          return <QuesCard data={item} />;
+          return <QuesCard data={item} key={idx} />;
         })}
       </div>
       <div className="flex items-center justify-center">
@@ -31,13 +31,13 @@ const Question = (props) => {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               stroke="currentColor"
               className="w-6 h-6"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
               ></path>
             </svg>
